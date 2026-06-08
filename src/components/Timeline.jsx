@@ -45,7 +45,7 @@ export default function Timeline({ onAchievementClick }) {
   ];
 
   return (
-    <section className="py-24 bg-background-secondary overflow-hidden">
+    <section className="py-16 bg-background-secondary overflow-hidden">
       <div className="max-w-3xl mx-auto px-6">
         
         <div className="mb-16 text-center">

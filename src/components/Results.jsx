@@ -103,7 +103,7 @@ export default function Results() {
   ];
 
   return (
-    <section id="results" className="py-24 bg-background">
+    <section id="results" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="mb-16 text-center">

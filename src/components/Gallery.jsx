@@ -21,7 +21,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="clinic" className="py-24 bg-white">
+    <section id="clinic" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Achievements Section */}

@@ -21,7 +21,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-24 bg-[#FAF8F5]">
+    <section id="testimonials" className="py-16 bg-[#FAF8F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm font-semibold tracking-wider text-accent uppercase mb-2">Patient Stories</p>

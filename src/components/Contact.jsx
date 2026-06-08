@@ -11,7 +11,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-background-secondary">
+    <section id="contact" className="py-16 bg-background-secondary">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="mb-16 text-center">

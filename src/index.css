@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    /* Scale down the entire UI proportionally by reducing the root rem size */
+    font-size: 13.5px; 
+  }
+  
   body {
     @apply bg-background text-primary font-sans antialiased;
   }
