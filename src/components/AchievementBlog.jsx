@@ -8,21 +8,21 @@ const detailedAchievements = [
     title: "Advanced Laser Training — Seoul, South Korea",
     desc: "Trained in fractional lasers, Q-switched lasers, and non-ablative skin rejuvenation.",
     content: "During this intensive fellowship in Seoul, Dr. Sharma worked alongside world-renowned laser specialists. She mastered the nuances of treating Asian skin types, which are notoriously prone to post-inflammatory hyperpigmentation. This foundational training shaped her conservative, highly effective approach to laser therapy. The experience also instilled a deep appreciation for combining traditional dermatology with cutting-edge aesthetic technology.",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800"
+    image: "/assets/custom-img-2.png"
   },
   {
     year: "2014",
     title: "Consultant Dermatologist — Hinduja Hospital",
     desc: "Appointed as Consultant Dermatologist at one of Mumbai's premier medical institutions.",
     content: "As a consultant at Hinduja Hospital, Dr. Sharma handled complex dermatological cases, ranging from severe autoimmune skin disorders to advanced cutaneous oncology. Her tenure here established her reputation as a meticulous diagnostician and a compassionate caregiver. She led numerous multi-disciplinary teams to treat rare skin conditions, cementing her authority in clinical dermatology.",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
+    image: "/assets/custom-img-1.png"
   },
   {
     year: "2016",
     title: "Research Publication",
     desc: "Published a landmark study on melanin disorders in Indian skin, cited by over 80 researchers globally.",
     content: "Driven by the lack of targeted research for Indian skin types, Dr. Sharma spearheaded a clinical study on melanin disorders. Her findings on melasma and post-inflammatory hyperpigmentation were published in the International Journal of Dermatology. This research fundamentally shifted how localized hyperpigmentation is treated in South Asian demographics, emphasizing barrier repair over aggressive peeling.",
-    image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800"
+    image: "/assets/custom-img-2.png"
   },
   {
     year: "2018",
@@ -36,14 +36,14 @@ const detailedAchievements = [
     title: "FAAD Certification",
     desc: "Earned the prestigious Fellowship of the American Academy of Dermatology.",
     content: "In 2020, Dr. Sharma achieved the Fellowship of the American Academy of Dermatology (FAAD), the highest distinction for dermatologists globally. This certification requires rigorous examination and continuous medical education. It represents her commitment to staying at the absolute forefront of global dermatological advancements.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+    image: "/assets/custom-img-2.png"
   },
   {
     year: "2022",
     title: "Facility Expansion",
     desc: "Integrated advanced fractional CO2 and PicoSure technology to offer state-of-the-art care.",
     content: "To meet growing patient needs, Clear Skin Clinic underwent a massive facility expansion. Dr. Sharma integrated the world's most advanced laser systems, including PicoSure and Fractional CO2. This allowed the clinic to offer unparalleled results in acne scar revision and tattoo removal, all while maintaining the warm, personal touch the clinic is known for.",
-    image: "/assets/gallery-2.png"
+    image: "/assets/custom-img-1.png"
   }
 ];
 
