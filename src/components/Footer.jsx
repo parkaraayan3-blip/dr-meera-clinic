@@ -71,7 +71,21 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Clear Skin Clinic. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+          <p>&copy; {new Date().getFullYear()} Clear Skin Clinic. All rights reserved.</p>
+          <span className="hidden md:inline text-gray-700">|</span>
+          <p>
+            Developed by{' '}
+            <a 
+              href="https://github.com/parkaraayan3-blip" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors font-medium"
+            >
+              Aayan Parkar
+            </a>
+          </p>
+        </div>
         <div className="flex space-x-6">
           <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
