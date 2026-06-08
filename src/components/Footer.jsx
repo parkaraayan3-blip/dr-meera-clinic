@@ -42,7 +42,7 @@ export default function Footer() {
             <p>12/A, Linking Road, Near National College</p>
             <p>Bandra West, Mumbai 400050</p>
             <p className="pt-2 flex items-center gap-2">
-              <span className="text-accent-optional">📞</span> +91 98765 43210
+              <span className="text-accent-optional">📞</span> +91 76205 40628
             </p>
             <p className="flex items-center gap-2">
               <span className="text-accent-optional">✉️</span> hello@clearskinclinic.in

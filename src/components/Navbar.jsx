@@ -57,9 +57,9 @@ export default function Navbar({ onNavigate }) {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center space-x-6">
-          <a href="tel:+919876543210" className="flex items-center gap-2 text-sm font-medium text-secondary hover:text-accent transition-colors">
+          <a href="tel:+917620540628" className="flex items-center gap-2 text-sm font-medium text-secondary hover:text-accent transition-colors">
             <Phone size={16} />
-            +91 98765 43210
+            +91 76205 40628
           </a>
           <a
             href="#contact"
@@ -101,9 +101,9 @@ export default function Navbar({ onNavigate }) {
                 </a>
               ))}
               <div className="pt-4 mt-4 border-t border-border flex flex-col gap-4">
-                <a href="tel:+919876543210" className="flex items-center gap-2 text-primary font-medium">
+                <a href="tel:+917620540628" className="flex items-center gap-2 text-primary font-medium">
                   <Phone size={18} />
-                  +91 98765 43210
+                  +91 76205 40628
                 </a>
                 <a
                   href="#contact"
