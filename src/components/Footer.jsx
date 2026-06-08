@@ -1,3 +1,5 @@
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-20 pb-10">
@@ -9,6 +11,17 @@ export default function Footer() {
           <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
             A premium dermatology practice founded by Dr. Meera Sharma, specializing in evidence-based medical and cosmetic skincare.
           </p>
+          <div className="flex items-center space-x-5 pt-2">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <Instagram size={20} />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+              <Facebook size={20} />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <Linkedin size={20} />
+            </a>
+          </div>
         </div>
 
         {/* Quick Links */}
