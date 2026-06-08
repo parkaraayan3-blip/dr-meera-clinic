@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Meera Sharma | Board-Certified Dermatologist — Mumbai</title>
+  <meta name="description" content="Dr. Meera Sharma is a board-certified dermatologist in Mumbai with 18+ years of experience treating acne, pigmentation, hair loss, and skin conditions. Book your consultation today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-brand">Dr. Meera <span>Sharma</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+919876543210" class="nav-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 98765 43210
+        </a>
+        <a href="#booking" class="btn btn-primary">Book Appointment</a>
+      </div>
+      <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about" onclick="closeMobileNav()">About</a>
+      <a href="#services" onclick="closeMobileNav()">Services</a>
+      <a href="#results" onclick="closeMobileNav()">Results</a>
+      <a href="#testimonials" onclick="closeMobileNav()">Testimonials</a>
+      <a href="#contact" onclick="closeMobileNav()">Contact</a>
+      <a href="#booking" class="btn btn-primary" onclick="closeMobileNav()" style="margin-top:8px;text-align:center;">Book Appointment</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       SECTION 1: HERO
+       ════════════════════════════════════ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800" alt="Dr. Meera Sharma — Board-Certified Dermatologist" loading="eager">
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          <span>Board-Certified Dermatologist</span>
+        </div>
+        <h1 class="hero-name">Dr. Meera Sharma</h1>
+        <p class="hero-quals">MD Dermatology, FAAD</p>
+        <div class="hero-meta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          18 Years of Clinical Experience
+          <span class="sep">·</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Mumbai, India
+        </div>
+        <p class="hero-desc">
+          I help patients treat acne, pigmentation, hair loss, and other skin concerns with personalised treatment plans backed by evidence-based medicine.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">
+            Book Appointment
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call +91 98765 43210
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn-icon" aria-label="Contact on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 2: TRUST BAR
+       ════════════════════════════════════ -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <div class="trust-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="trust-card-number">18+</div>
+        <div class="trust-card-label">Years of Clinical Experience</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="trust-card-number">15,000+</div>
+        <div class="trust-card-label">Patients Treated</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <div class="trust-card-number">FAAD</div>
+        <div class="trust-card-label">American Academy of Dermatology</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div class="trust-card-number">12</div>
+        <div class="trust-card-label">Peer-Reviewed Publications</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 3: ABOUT THE DOCTOR
+       ════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">About</p>
+        <h2 class="section-title">About Dr. Sharma</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1594824436998-ddedce228cb6?auto=format&fit=crop&q=80&w=800" alt="Dr. Meera Sharma in consultation with a patient" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p>
+            Dr. Meera Sharma is a board-certified dermatologist with over 18 years of experience in medical and cosmetic dermatology. After completing her MD in Dermatology from KEM Hospital, Mumbai, she pursued advanced training in laser dermatology in Singapore and South Korea.
+          </p>
+          <p>
+            She has worked as a consultant dermatologist at some of Mumbai's leading hospitals, including Hinduja Hospital, before founding Clear Skin Clinic in Bandra in 2018. Her work has been published in 12 peer-reviewed journals, with a special focus on pigmentation disorders in Indian skin.
+          </p>
+          <p>
+            Dr. Sharma believes in taking time with every patient, listening to their concerns, and creating treatment plans that are practical, affordable, and grounded in clinical evidence.
+          </p>
+          <div class="about-philosophy">
+            <p>"Every patient is unique. I take time to understand your skin, your concerns, and your goals before recommending any treatment. There are no shortcuts in good dermatology."</p>
+          </div>
+          <div class="about-tags">
+            <span class="about-tag">Medical Dermatology</span>
+            <span class="about-tag">Cosmetic Dermatology</span>
+            <span class="about-tag">Laser Treatments</span>
+            <span class="about-tag">Paediatric Dermatology</span>
+            <span class="about-tag">Hair Disorders</span>
+            <span class="about-tag">Pigmentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 4: DOCTOR JOURNEY TIMELINE
+       ════════════════════════════════════ -->
+  <section class="timeline" id="journey">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <p class="section-label">Career</p>
+        <h2 class="section-title">Professional Journey</h2>
+      </div>
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2006</div>
+            <div class="timeline-title">MBBS — Grant Medical College, Mumbai</div>
+            <div class="timeline-desc">Graduated with distinction in Anatomy and Medicine.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2010</div>
+            <div class="timeline-title">MD Dermatology — KEM Hospital, Mumbai</div>
+            <div class="timeline-desc">Completed specialisation with a thesis on melasma treatment in South Asian skin.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2011</div>
+            <div class="timeline-title">Clinical Fellowship — Singapore General Hospital</div>
+            <div class="timeline-desc">Advanced training in dermatologic surgery and procedural dermatology.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2013</div>
+            <div class="timeline-title">Advanced Laser Training — Seoul, South Korea</div>
+            <div class="timeline-desc">Trained in fractional lasers, Q-switched lasers, and non-ablative skin rejuvenation.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2014</div>
+            <div class="timeline-title">Consultant Dermatologist — Hinduja Hospital</div>
+            <div class="timeline-desc">Appointed as Consultant Dermatologist at one of Mumbai's premier hospitals.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2016</div>
+            <div class="timeline-title">Research Publication — Melanin Disorders</div>
+            <div class="timeline-desc">Published landmark study on melanin disorders in Indian skin, cited by 80+ researchers.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-title">Founded Clear Skin Clinic — Bandra, Mumbai</div>
+            <div class="timeline-desc">Opened a private practice focused on evidence-based dermatology and patient-centric care.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-title">FAAD Certification</div>
+            <div class="timeline-desc">Became a Fellow of the American Academy of Dermatology.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-title">Expanded Laser Facility</div>
+            <div class="timeline-desc">Added advanced fractional CO2 laser and PicoSure technology to the clinic.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 5: SERVICES
+       ════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Treatments</p>
+        <h2 class="section-title">Treatments &amp; Services</h2>
+        <p class="section-subtitle">Evidence-based treatments for a wide range of skin, hair, and nail conditions.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="service-card-title">Acne Treatment</h3>
+          <p class="service-card-desc">Comprehensive acne management including topical therapy, oral medications, and advanced procedures for all severity levels.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+          </div>
+          <h3 class="service-card-title">Acne Scar Treatment</h3>
+          <p class="service-card-desc">Reduce acne scarring with fractional lasers, microneedling, subcision, and medical-grade chemical peels.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="service-card-title">Hair Loss Treatment</h3>
+          <p class="service-card-desc">Diagnosis and treatment of hair loss including PRP therapy, medications, mesotherapy, and lifestyle guidance.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+          </div>
+          <h3 class="service-card-title">PRP Therapy</h3>
+          <p class="service-card-desc">Platelet-rich plasma therapy for hair restoration and skin rejuvenation using your body's own growth factors.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <h3 class="service-card-title">Pigmentation Treatment</h3>
+          <p class="service-card-desc">Treat melasma, dark spots, post-inflammatory hyperpigmentation, and uneven skin tone with targeted therapies.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="service-card-title">Laser Procedures</h3>
+          <p class="service-card-desc">Advanced laser treatments for hair removal, skin resurfacing, vascular lesions, and tattoo removal.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3 class="service-card-title">Chemical Peels</h3>
+          <p class="service-card-desc">Medical-grade chemical peels for acne, pigmentation, fine lines, and overall skin texture improvement.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="service-card-title">Skin Rejuvenation</h3>
+          <p class="service-card-desc">Non-surgical treatments to restore skin firmness, texture, and radiance including microneedling and PRP.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="service-card-title">Anti-Aging Treatments</h3>
+          <p class="service-card-desc">Botox, dermal fillers, thread lifts, and collagen-boosting treatments for natural, age-appropriate results.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3 class="service-card-title">Mole &amp; Wart Removal</h3>
+          <p class="service-card-desc">Safe removal of moles, warts, skin tags, and other benign growths using radiofrequency or laser.</p>
+          <a href="#" class="service-card-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 6: BEFORE & AFTER RESULTS
+       ════════════════════════════════════ -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Results</p>
+        <h2 class="section-title">Treatment Results</h2>
+        <p class="section-subtitle">Real results from real patients. All photographs shared with informed patient consent.</p>
+      </div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-slider acne-slider" data-position="50">
+            <div class="result-before"></div>
+            <div class="result-after"></div>
+            <div class="result-divider"></div>
+            <div class="result-labels">
+              <span class="result-label">Before</span>
+              <span class="result-label">After</span>
+            </div>
+          </div>
+          <div class="result-info">
+            <span class="result-treatment">Acne Treatment</span>
+            <span class="result-duration">8 weeks</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-slider scar-slider" data-position="50">
+            <div class="result-before"></div>
+            <div class="result-after"></div>
+            <div class="result-divider"></div>
+            <div class="result-labels">
+              <span class="result-label">Before</span>
+              <span class="result-label">After</span>
+            </div>
+          </div>
+          <div class="result-info">
+            <span class="result-treatment">Acne Scar Treatment</span>
+            <span class="result-duration">6 sessions</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-slider hair-slider" data-position="50">
+            <div class="result-before"></div>
+            <div class="result-after"></div>
+            <div class="result-divider"></div>
+            <div class="result-labels">
+              <span class="result-label">Before</span>
+              <span class="result-label">After</span>
+            </div>
+          </div>
+          <div class="result-info">
+            <span class="result-treatment">Hair Restoration</span>
+            <span class="result-duration">6 months</span>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-slider pigment-slider" data-position="50">
+            <div class="result-before"></div>
+            <div class="result-after"></div>
+            <div class="result-divider"></div>
+            <div class="result-labels">
+              <span class="result-label">Before</span>
+              <span class="result-label">After</span>
+            </div>
+          </div>
+          <div class="result-info">
+            <span class="result-treatment">Pigmentation Therapy</span>
+            <span class="result-duration">12 weeks</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 7: CLINIC GALLERY
+       ════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Clinic</p>
+        <h2 class="section-title">Our Clinic</h2>
+        <p class="section-subtitle">A modern, comfortable space designed with patient care in mind.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/gallery-1.png" alt="Consultation room at Clear Skin Clinic" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/gallery-2.png" alt="Clinic reception and waiting area" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/gallery-3.png" alt="Treatment room with modern equipment" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 8: TESTIMONIALS
+       ════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Reviews</p>
+        <h2 class="section-title">What Patients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote">Dr. Sharma took the time to understand my skin concerns and created a treatment plan that actually worked. After years of struggling with acne, I finally have clear skin. She explained every step and never pushed unnecessary procedures.</p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">Priya M.</span>
+            <span class="testimonial-treatment">Acne Treatment</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote">I was sceptical about PRP therapy, but Dr. Sharma explained everything clearly and set realistic expectations. Six months later, I can see real improvement in my hair density. Very professional and honest doctor.</p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">Rahul K.</span>
+            <span class="testimonial-treatment">Hair Loss Treatment</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-quote">The melasma on my face had been bothering me for years. Dr. Sharma's treatment plan was methodical and the results speak for themselves. She also educated me on sun protection, which made a real difference.</p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">Anjali D.</span>
+            <span class="testimonial-treatment">Pigmentation Treatment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 9: FAQ
+       ════════════════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <p class="section-label">Questions</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do I need to book an appointment beforehand?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, we recommend booking an appointment to ensure you receive dedicated time with Dr. Sharma. Walk-ins are accepted but may involve a wait, especially during peak hours.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How long does a typical consultation last?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">A first consultation is typically 30–45 minutes. This includes a thorough skin examination, discussion of your concerns, and a personalised treatment plan. Follow-up visits are usually 15–20 minutes depending on the treatment.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Are the procedures painful?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Most procedures involve minimal discomfort. We use topical anaesthetics and cooling devices when needed, and always discuss what to expect before starting any treatment. Patient comfort is our priority.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What should I expect after a laser treatment?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Mild redness and sensitivity are normal for 24–48 hours after most laser treatments. Dr. Sharma will provide detailed post-procedure care instructions and a follow-up schedule. Most patients return to normal activities the next day.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What are the consultation charges?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">First consultation is ₹1,500. Follow-up consultations are ₹800. Procedure costs vary and are discussed in detail during your consultation. We believe in transparent pricing with no hidden charges.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 10: APPOINTMENT BOOKING
+       ════════════════════════════════════ -->
+  <section class="booking" id="booking">
+    <div class="container booking-grid">
+      <div class="booking-info">
+        <div>
+          <p class="section-label">Appointment</p>
+          <h2 class="booking-info-title">Book an Appointment</h2>
+          <p class="booking-info-desc" style="margin-top:12px;">Schedule your consultation with Dr. Sharma. We'll confirm your appointment within 2 hours during clinic hours.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;">
+          <div class="booking-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call us: +91 98765 43210
+          </div>
+          <div class="booking-contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" style="color:var(--accent);"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            WhatsApp: +91 98765 43210
+          </div>
+          <div class="booking-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            aayanparkar096@gmail.com
+          </div>
+        </div>
+      </div>
+      <div class="booking-form" id="booking-form-container">
+        <form class="form-grid" id="booking-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="treatment">Treatment Type</label>
+            <select class="form-select" id="treatment" name="treatment">
+              <option value="">Select treatment</option>
+              <option value="general">General Consultation</option>
+              <option value="acne">Acne Treatment</option>
+              <option value="hair">Hair Loss Treatment</option>
+              <option value="pigmentation">Pigmentation Treatment</option>
+              <option value="laser">Laser Procedure</option>
+              <option value="anti-aging">Anti-Aging Treatment</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="date">Preferred Date</label>
+            <input class="form-input" type="date" id="date" name="date">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="time">Preferred Time</label>
+            <select class="form-select" id="time" name="time">
+              <option value="">Select time</option>
+              <option value="morning">Morning (10:00 AM – 12:00 PM)</option>
+              <option value="afternoon">Afternoon (12:00 PM – 3:00 PM)</option>
+              <option value="evening">Evening (3:00 PM – 7:00 PM)</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label class="form-label" for="message">Message (optional)</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Briefly describe your concern..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+          </div>
+        </form>
+        <div class="booking-success" id="booking-success">
+          <div class="booking-success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Appointment Request Received</h3>
+          <p>Thank you! We'll confirm your appointment within 2 hours during clinic hours. You can also reach us on WhatsApp for a quicker response.</p>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:20px;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Follow up on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 11: CONTACT & FOOTER
+       ════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Visit</p>
+        <h2 class="section-title">Contact &amp; Location</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <h3 class="contact-clinic-name">Clear Skin Clinic</h3>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>203, Bandra Medical Centre, Hill Road,<br>Bandra West, Mumbai 400050</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>aayanparkar096@gmail.com</span>
+          </div>
+          <div class="contact-hours">
+            <p class="contact-hours-title">Clinic Hours</p>
+            <p style="font-size:0.9375rem;color:var(--text-secondary);line-height:1.7;">
+              Monday – Saturday: 10:00 AM – 7:00 PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1234567890123!2d72.8311890!3d19.0596980!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888888888%3A0x1111111111111111!2sBandra%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Clear Skin Clinic Location"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2024 Dr. Meera Sharma Dermatology Clinic. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
