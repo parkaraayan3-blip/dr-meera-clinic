@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 export default function About() {
   return (
     <section id="about" className="py-16 bg-white">
@@ -13,33 +11,23 @@ export default function About() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           
           {/* Image */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-5 relative"
-          >
+          <div className="lg:col-span-5 relative css-fade-up">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-background-secondary">
               <img 
                 src="/assets/custom-img-2.webp" 
                 alt="Dr. Meera Sharma consulting with a patient" 
                 loading="lazy"
+                width="500"
+                height="625"
                 className="w-full h-full object-cover"
               />
             </div>
             {/* Subtle decorative element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/10 rounded-full -z-10 blur-2xl" />
-          </motion.div>
+          </div>
 
           {/* Text Content */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-7 space-y-6 text-lg"
-          >
+          <div className="lg:col-span-7 space-y-6 text-lg css-fade-up" style={{ animationDelay: '0.2s' }}>
             <p>
               Dr. Meera Sharma is a board-certified dermatologist with over 18 years of clinical experience. She completed her MD in Dermatology from KEM Hospital, Mumbai, before pursuing advanced training in Singapore and South Korea.
             </p>
@@ -63,7 +51,7 @@ export default function About() {
                 </span>
               ))}
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>

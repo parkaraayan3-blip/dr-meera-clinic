@@ -3,10 +3,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustBar from './components/TrustBar';
 import About from './components/About';
-import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 
-// Lazy load below-the-fold or conditional components
+// Lazy load below-the-fold components (these use framer-motion)
+const Timeline = lazy(() => import('./components/Timeline'));
 const Services = lazy(() => import('./components/Services'));
 const Results = lazy(() => import('./components/Results'));
 const Gallery = lazy(() => import('./components/Gallery'));
@@ -32,31 +32,35 @@ function App() {
     <div className="min-h-screen bg-background font-sans text-primary selection:bg-accent selection:text-white">
       <Navbar onNavigate={() => handleBackToHome()} />
       
-      <Suspense fallback={
-        <div className="py-24 text-center text-secondary">
-          <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-sm font-medium tracking-wide">Loading clinic details...</p>
-        </div>
-      }>
-        {activeView === 'blog' ? (
+      {activeView === 'blog' ? (
+        <Suspense fallback={
+          <div className="py-24 text-center text-secondary">
+            <p className="text-sm font-medium tracking-wide">Loading...</p>
+          </div>
+        }>
           <AchievementBlog 
             selectedAchievement={selectedAchievement} 
             onBack={handleBackToHome} 
           />
-        ) : (
-          <main>
-            <Hero />
-            <TrustBar />
-            <About />
+        </Suspense>
+      ) : (
+        <main>
+          {/* Above-the-fold: no framer-motion, renders instantly */}
+          <Hero />
+          <TrustBar />
+          <About />
+          
+          {/* Below-the-fold: lazy loaded with framer-motion */}
+          <Suspense fallback={null}>
             <Timeline onAchievementClick={handleAchievementClick} />
             <Services />
             <Results />
             <Gallery />
             <Testimonials />
             <Contact />
-          </main>
-        )}
-      </Suspense>
+          </Suspense>
+        </main>
+      )}
       
       <Footer />
     </div>

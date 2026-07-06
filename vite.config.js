@@ -7,5 +7,16 @@ export default defineConfig({
   server: {
     port: 3000,
     strictPort: true,
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Isolate framer-motion into its own chunk so it only loads
+          // when below-the-fold lazy components need it
+          'framer-motion': ['framer-motion'],
+        }
+      }
+    }
   }
 })

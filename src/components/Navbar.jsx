@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar({ onNavigate }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +9,7 @@ export default function Navbar({ onNavigate }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -74,49 +73,44 @@ export default function Navbar({ onNavigate }) {
         <button
           className="lg:hidden text-primary z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle navigation menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Nav Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 right-0 bg-white border-b border-border shadow-lg lg:hidden"
-          >
-            <div className="flex flex-col p-6 space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={handleLinkClick}
-                  className="text-primary font-medium text-lg"
-                >
-                  {link.name}
-                </a>
-              ))}
-              <div className="pt-4 mt-4 border-t border-border flex flex-col gap-4">
-                <a href="tel:+917620540628" className="flex items-center gap-2 text-primary font-medium">
-                  <Phone size={18} />
-                  +91 76205 40628
-                </a>
-                <a
-                  href="#contact"
-                  onClick={handleLinkClick}
-                  className="px-5 py-3 bg-accent text-white text-center rounded-full font-medium"
-                >
-                  Book Appointment
-                </a>
-              </div>
+      {isMobileMenuOpen && (
+        <div
+          className="absolute top-full left-0 right-0 bg-white border-b border-border shadow-lg lg:hidden animate-slide-down"
+        >
+          <div className="flex flex-col p-6 space-y-4">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={handleLinkClick}
+                className="text-primary font-medium text-lg"
+              >
+                {link.name}
+              </a>
+            ))}
+            <div className="pt-4 mt-4 border-t border-border flex flex-col gap-4">
+              <a href="tel:+917620540628" className="flex items-center gap-2 text-primary font-medium">
+                <Phone size={18} />
+                +91 76205 40628
+              </a>
+              <a
+                href="#contact"
+                onClick={handleLinkClick}
+                className="px-5 py-3 bg-accent text-white text-center rounded-full font-medium"
+              >
+                Book Appointment
+              </a>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
