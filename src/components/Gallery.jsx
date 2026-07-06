@@ -70,15 +70,16 @@ export default function Gallery() {
               className="md:col-span-2 rounded-2xl overflow-hidden relative group min-h-[300px]"
             >
               <img 
-                src="/assets/gallery-1.png" 
+                src="/assets/gallery-1.webp" 
                 alt="Clinic Reception" 
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-6 left-6 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg text-sm font-medium text-primary shadow-sm">
                 Reception & Waiting Lounge
               </div>
             </motion.div>
-
+ 
             <div className="md:col-span-1 flex flex-col gap-6">
               {/* Image 2 */}
               <motion.div 
@@ -89,15 +90,16 @@ export default function Gallery() {
                 className="rounded-2xl overflow-hidden relative group aspect-[4/3]"
               >
                 <img 
-                  src="/assets/gallery-2.png" 
+                  src="/assets/gallery-2.webp" 
                   alt="Treatment Room" 
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-4 left-4 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg text-xs font-medium text-primary shadow-sm">
                   Treatment Room
                 </div>
               </motion.div>
-
+ 
               {/* Image 3 */}
               <motion.div 
                 initial={{ opacity: 0, x: 20 }}
@@ -107,8 +109,9 @@ export default function Gallery() {
                 className="rounded-2xl overflow-hidden relative group aspect-[4/3]"
               >
                 <img 
-                  src="/assets/gallery-3.png" 
+                  src="/assets/gallery-3.webp" 
                   alt="Clinical Products" 
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-4 left-4 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-lg text-xs font-medium text-primary shadow-sm">

@@ -22,8 +22,9 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-background-secondary">
               <img 
-                src="/assets/custom-img-2.png" 
+                src="/assets/custom-img-2.webp" 
                 alt="Dr. Meera Sharma consulting with a patient" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

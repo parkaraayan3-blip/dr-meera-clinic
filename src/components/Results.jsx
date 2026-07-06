@@ -79,26 +79,26 @@ export default function Results() {
     {
       title: "Acne Treatment",
       detail: "8 weeks",
-      beforeImg: "/assets/acne-before.png",
-      afterImg: "/assets/acne-after.png"
+      beforeImg: "/assets/acne-before.webp",
+      afterImg: "/assets/acne-after.webp"
     },
     {
       title: "Acne Scar Treatment",
       detail: "6 sessions",
-      beforeImg: "/assets/acne-scar-before.png",
-      afterImg: "/assets/acne-scar-after.png"
+      beforeImg: "/assets/acne-scar-before.webp",
+      afterImg: "/assets/acne-scar-after.webp"
     },
     {
       title: "Hair Restoration",
       detail: "16 weeks",
-      beforeImg: "/assets/hair-fall-before.png",
-      afterImg: "/assets/hair-fall-after.png"
+      beforeImg: "/assets/hair-fall-before.webp",
+      afterImg: "/assets/hair-fall-after.webp"
     },
     {
       title: "Facial Rejuvenation",
       detail: "12 weeks",
-      beforeImg: "/assets/face-before-1.png",
-      afterImg: "/assets/face-after-1.png"
+      beforeImg: "/assets/face-before-1.webp",
+      afterImg: "/assets/face-after-1.webp"
     }
   ];
 

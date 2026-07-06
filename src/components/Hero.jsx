@@ -88,8 +88,10 @@ export default function Hero() {
           className="relative lg:h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl"
         >
           <img 
-            src="/assets/custom-img-1.png" 
+            src="/assets/custom-img-1.webp" 
             alt="Dr. Meera Sharma — Board-Certified Dermatologist" 
+            fetchpriority="high"
+            loading="eager"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent mix-blend-multiply" />

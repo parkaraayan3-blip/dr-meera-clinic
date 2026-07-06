@@ -1,16 +1,18 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustBar from './components/TrustBar';
 import About from './components/About';
 import Timeline from './components/Timeline';
-import Services from './components/Services';
-import Results from './components/Results';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
-import AchievementBlog from './components/AchievementBlog';
+
+// Lazy load below-the-fold or conditional components
+const Services = lazy(() => import('./components/Services'));
+const Results = lazy(() => import('./components/Results'));
+const Gallery = lazy(() => import('./components/Gallery'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const Contact = lazy(() => import('./components/Contact'));
+const AchievementBlog = lazy(() => import('./components/AchievementBlog'));
 
 function App() {
   const [activeView, setActiveView] = useState('home');
@@ -30,24 +32,31 @@ function App() {
     <div className="min-h-screen bg-background font-sans text-primary selection:bg-accent selection:text-white">
       <Navbar onNavigate={() => handleBackToHome()} />
       
-      {activeView === 'blog' ? (
-        <AchievementBlog 
-          selectedAchievement={selectedAchievement} 
-          onBack={handleBackToHome} 
-        />
-      ) : (
-        <main>
-          <Hero />
-          <TrustBar />
-          <About />
-          <Timeline onAchievementClick={handleAchievementClick} />
-          <Services />
-          <Results />
-          <Gallery />
-          <Testimonials />
-          <Contact />
-        </main>
-      )}
+      <Suspense fallback={
+        <div className="py-24 text-center text-secondary">
+          <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-sm font-medium tracking-wide">Loading clinic details...</p>
+        </div>
+      }>
+        {activeView === 'blog' ? (
+          <AchievementBlog 
+            selectedAchievement={selectedAchievement} 
+            onBack={handleBackToHome} 
+          />
+        ) : (
+          <main>
+            <Hero />
+            <TrustBar />
+            <About />
+            <Timeline onAchievementClick={handleAchievementClick} />
+            <Services />
+            <Results />
+            <Gallery />
+            <Testimonials />
+            <Contact />
+          </main>
+        )}
+      </Suspense>
       
       <Footer />
     </div>
