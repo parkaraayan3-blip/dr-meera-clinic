@@ -12,15 +12,16 @@ export default function Contact() {
     setStatus('idle');
     setErrorMessage('');
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    // Read from environment variable or use the fallback key directly
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "3c41e2f1-6c74-4ae1-9ca5-a326faf96f5c";
     console.log("Vite Environment Variables:", import.meta.env);
-    console.log("Web3Forms Access Key loaded:", accessKey ? "Yes (masked)" : "No");
+    console.log("Web3Forms Access Key loaded:", accessKey ? "Yes" : "No");
     
     if (!accessKey) {
       setIsSubmitting(false);
       setStatus('error');
       setErrorMessage(
-        'Web3Forms Access Key is not configured. If you recently created the .env file, please stop your terminal and restart the dev server (run `npm run dev` again).'
+        'Web3Forms Access Key is not configured. Please add VITE_WEB3FORMS_ACCESS_KEY to your environment variables (.env file) or configure it in the component.'
       );
       return;
     }
